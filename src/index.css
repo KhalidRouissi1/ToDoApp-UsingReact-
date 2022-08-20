@@ -1,13 +1,99 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #4555a1;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .title {
+  color: white;
+  font-size: 50px;
+}
+
+.container h3 {
+  color: #4555a1;
+  font-size: 25px;
+}
+
+.container .content {
+  width: 50%;
+  background-color: white;
+}
+
+.container .content .Titles {
+  color: white;
+
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  background-color: #22aff3;
+}
+
+.container .content .Titles span:first-child {
+  margin-left: 50px;
+}
+
+.container .content .Titles .nestedContent {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.container .content .Titles .nestedContent span:last-child {
+  margin-right: 20px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs .name {
+  flex: 1;
+  font-size: 20px;
+  color: #757575;
+  font-weight: bold;
+}
+
+.inputs input {
+  width: 49%;
+  border: none;
+  border: 1px solid white;
+  padding: 15px 10px;
+}
+
+.ageInAndSub {
+  display: flex;
+  width: 49%;
+}
+
+.inputs .btn {
+  padding: 15px 10px;
+  color: white;
+  background-color: #22aff3;
+  border: none;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.deleteButton {
+  cursor: pointer;
 }
